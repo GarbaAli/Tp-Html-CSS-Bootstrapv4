@@ -1,0 +1,168 @@
+<!Doctype  html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mon artisan</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap-grid.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/index.css">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+<body>
+	<main>
+		<div id="site_espace">
+			<!-- Entete -->
+			<div id="fil_ariane" class="container"><span>html-css</span></div>
+			<div class="entete bg-gris-clair">
+				<div id="titre" class="container">
+					<div class="row">
+						<div class="col-2 col-md-1 align-self-center">
+							<img src="assets/img/images.png" alt="Remplacement de WC" class="img-fluid">
+						</div>
+						<div class="col text-left">
+							<h1 class="text-left">
+								<span class="text-orange">Remplacement de WC</span>
+								<span class="d-inline">
+									<a href="#" class="btn btn-outline-grey" id="collapsed" data-toggle="collapse" title="Voir le detail" aria-expanded="false">
+										<i class="fas fa-arrow-down">Details</i>
+									</a>
+								</span>
+							</h1>
+							<div class="choixdeclinaison">
+								
+							</div>
+							<div class="collapse" id="show">
+								<div class="infoOffreomprend">
+									<p>Coupure de l'alimentation en eau</p>
+									<p>Demontage de l'ancien <strong>WC</strong> a l'evacuation</p>
+									<p> <strong>Fixation du WC</strong> au sol</p>
+									<p>Raccordement a l'arrivee d'eau</p>
+									<p>Remise en eau et controle d'etancheite</p>
+									<p>Main d'oeuvre</p>
+									<p>Fournitures</p>
+									<p>Deplacement</p>
+									<p>Remboursement</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- Fin Entete -->
+
+			<!-- Section Date Souhaite -->
+			<div class="container text-center mt-2 mt-md-5 mb-5">
+				<h3>Date souhaitée ?</h3>
+				<form method="post" action="#">
+					<div class="pt-md-4 pt-md-4">
+						<div class="row formulaire no-guetters"></div>
+
+						<div id="miniForm" class="col-12">
+							<div class="row ligneForm align-items-center" id="dateRdv">
+								<div class="form-group col-6">
+									<input type="text" placeholder="Date souhaitée" name="datepicker" class="form-control datepicker hasdatepicker">
+								</div>
+								<div class="form-group col-4 text-left">
+									<select name="" class="form-control">
+										<option value="8">8h</option>
+										<option value="9">9h</option>
+										<option value="10">10h</option>
+										<option value="11">11h</option>
+										<option value="12">12h</option>
+										<option value="13">13h</option>
+										<option value="14">14h</option>
+										<option value="15">15h</option>
+										<option value="16">16h</option>
+										<option value="17">17h</option>
+										<option value="18">18h</option>
+										<option value="19">19h</option>
+										<option value="20">20h</option>
+									</select>
+								</div>
+								<div class="col-2 hide-on-small-only form-group">
+									<button title="Effacer ce rendez-vous" class="btn rdvSuppression">
+										<i class="fas fa-trash fa-2x"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div id="btnNewDate" class="col-12">
+							<button type="button" class="btn btn-flat Newajout">
+								<i class="fas fa-plus" aria-hidden="true"></i>
+								Ajouter une autre date
+							</button>
+						</div>
+					</div>
+
+					<!-- 2 boutons -->
+					<div class="pt-3 pt-md-4">
+						<button type="submit" class="nexBtn btn-grey">Choisir plus tard</button>
+						<button type="submit" class="nexBtn btn-orange">
+							Suivant
+							<i class="fas fa-caret-right"></i>
+						</button>
+
+					</div>
+
+
+					<!-- Precedent -->
+					<div class="pt-3 pt-md-4">
+						<a href="#" style="color: #EF7900" class="mt-10">
+							<i class="fas fa-caret-left"></i>
+							Precédent
+						</a>
+					</div>
+				</form>
+			</div>
+
+			<!--Fin  Section Date Souhaite -->
+			<div class="text-center">
+				<h3 class="text-center">Un coup de main ?</h3>
+				<p class="text-center">
+					Appelez-moi au
+					<button class="appel" onclick="location.href='tel:690842552'">04 86 68 81 31</button>
+				</p>
+				<img class="rounded-circle imgs" src="assets/img/portrait.jpg" alt="Image">
+				<p class="flow-text mt-2">
+					<strong>Patrick</strong>
+					<br>
+					<i>Conseiller technique</i>
+				</p>
+			</div>
+
+			<!-- Image Visa -->
+			<div class="mt-5">
+				<div class="container text-center carteVisa">
+					<div class="row">
+						<div class="col">
+							<img src="assets/img/paiement.png" alt="Paiement des travaux sécurisé" class="img-fluid lazy" style="display:inline;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row"></div>
+		</div>
+	</footer>
+
+	<script>
+		var btn = document.getElementById("collapsed");
+		var shw = document.getElementById('show');
+
+		btn.addEventListener("click", function(){
+			shw.classList.toggle("show");
+		});
+	</script>
+
+
+</body>
+</html>
